@@ -672,3 +672,11 @@ a{ text-decoration: none; color: inherit; }
   .hero__logo{ width: 140px; }
   .hero h1{ font-size: 1.8rem; }
 }
+
+@media (max-width: 720px){
+  .hero{
+    min-height: auto;
+    padding: 100px 0 50px;
+    background-position: 65% 100%;
+  }
+}
