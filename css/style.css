@@ -188,9 +188,8 @@ a{ text-decoration: none; color: inherit; }
   text-align: center;
   overflow: hidden;
   background:
-    radial-gradient(circle at 15% 15%, rgba(47,107,214,0.35), transparent 45%),
-    radial-gradient(circle at 85% 85%, rgba(242,169,59,0.18), transparent 50%),
-    linear-gradient(160deg, #0b1a33 0%, #0d2247 45%, #0a0a0c 100%);
+    linear-gradient(160deg, rgba(11,26,51,0.82) 0%, rgba(13,34,71,0.78) 45%, rgba(10,10,12,0.85) 100%),
+    url('../Imagenes/nave.jpg') center 30%/cover no-repeat;
 }
 .hero::before{
   /* Patrón tipo "plano de construcción" muy sutil, sello propio de marca */
@@ -206,13 +205,16 @@ a{ text-decoration: none; color: inherit; }
 .hero__overlay{
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 20%, rgba(47,107,214,0.25), transparent 60%);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(47,107,214,0.30), transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(242,169,59,0.15), transparent 50%),
+    radial-gradient(circle at 50% 20%, rgba(47,107,214,0.2), transparent 60%);
 }
 .hero__overlay::after{
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.55), transparent 35%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6), transparent 40%);
 }
 .hero__content{
   position: relative;
@@ -229,7 +231,7 @@ a{ text-decoration: none; color: inherit; }
   margin-bottom: 20px;
 }
 .hero__logo{
-  width: 280px;
+  width: 340px;
   filter: drop-shadow(0 10px 25px rgba(0,0,0,0.5));
   animation: floatLogo 4s ease-in-out infinite;
 }
