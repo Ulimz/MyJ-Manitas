@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<script src="js/analytics.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reformas y mantenimiento en Sevilla | M&J Manitas</title>
 <meta name="description" content="Reformas de locales y viviendas en Sevilla. Albañilería, pintura, electricidad, fontanería, interiorismo y seguridad. Solicite presupuesto a M&J Manitas por teléfono o WhatsApp.">
@@ -342,8 +343,22 @@
     </div>
     <p>&copy; <span id="year"></span> M&J Manitas — Reformas y mantenimiento en Sevilla.</p>
     <a href="tel:+34642427391" class="footer__phone">642 42 73 91</a>
+    <button type="button" class="cookie-settings" id="cookie-settings" hidden>Preferencias de cookies</button>
   </div>
+  <p class="cookie-status container" id="cookie-status" role="status"></p>
 </footer>
+
+<aside class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description" hidden>
+  <h2 id="cookie-title">Cookies de análisis</h2>
+  <p id="cookie-description">Con su permiso, utilizamos Google Analytics para medir visitas y uso de esta web mediante cookies. No se carga Analytics antes de aceptar. Rechazar no impide utilizar la web.</p>
+  <p>Guardamos su elección en este navegador durante 6 meses. Puede cambiarla en «Preferencias de cookies» en el pie de página. Al retirar el permiso, dejamos de medir y eliminamos las cookies de Analytics accesibles de esta web; esto no borra los datos ya enviados.</p>
+  <a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener">Información sobre la privacidad de Google</a>
+  <div class="cookie-banner__actions">
+    <button type="button" class="btn" id="cookie-reject">Rechazar Analytics</button>
+    <button type="button" class="btn" id="cookie-accept">Aceptar Analytics</button>
+    <button type="button" class="cookie-settings" id="cookie-close" hidden>Cerrar sin cambiar</button>
+  </div>
+</aside>
 
 <div class="contact-dock" aria-label="Contacto rápido">
   <a href="tel:+34642427391" class="contact-dock__phone">Llamar</a>
