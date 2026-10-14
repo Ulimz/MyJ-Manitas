@@ -588,6 +588,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 .tag--antes{ background: #d64545; color: var(--blanco); }
 .tag--proceso{ background: var(--dorado); color: var(--negro); }
 .tag--resultado{ background: #2fa96b; color: var(--blanco); }
+.tag--reciente{ background: var(--azul-claro); color: var(--blanco); }
 
 .videos{ margin-top: 70px; }
 .videos__title{
@@ -597,8 +598,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 }
 .videos__grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 26px;
+  align-items: stretch;
 }
 .video-card{
   position: relative;
@@ -607,6 +609,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   overflow: hidden;
   box-shadow: var(--shadow);
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .video-card .tag{
   position: absolute;
@@ -615,8 +619,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 }
 .video-card video{
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   display: block;
+  object-fit: contain;
   max-height: 420px;
   background: #000;
 }
@@ -777,7 +783,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   .presentacion__grid{ grid-template-columns: 1fr; }
   .presentacion__media{ order: -1; }
   .galeria{ grid-template-columns: repeat(2, 1fr); }
-  .videos__grid{ grid-template-columns: 1fr; }
   .proyectos, .case-summary, .contacto__inner{ grid-template-columns: 1fr; }
   .zona__inner{ align-items: flex-start; flex-direction: column; }
 }
